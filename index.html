@@ -8,17 +8,17 @@
       document.head.innerHTML = `<base href="https://horizonwake.github.io/template-stc/">` + document.head.innerHTML;
     }
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+  <link rel="stylesheet" href="./styles/photo-sphere-viewer.css" />
   
   <!-- import map required for panoramic viewer -->
   <script type="importmap">
     {
         "imports": { 
-            "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
-            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+            "three": "./scripts/three.module.js",
+            "@photo-sphere-viewer/core": "./scripts/photo-sphere-viewer.js"
         }
     }
-</script>
+  </script>
   <script src="./index.js" type="module"></script>
   <title>Modern Landscapes - Transform Your Outdoor Space</title>
 </head>
