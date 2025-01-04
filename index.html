@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (window.location.hostname.includes('github.io')) {
+      document.head.innerHTML = `<base href="https://horizonwake.github.io/template-stc/">` + document.head.innerHTML;
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+  
+  <!-- import map required for panoramic viewer -->
+  <script type="importmap">
+    {
+        "imports": { 
+            "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+        }
+    }
+</script>
+  <script src="./index.js" type="module"></script>
+  <title>Modern Landscapes - Transform Your Outdoor Space</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Modern Landscapes</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#virtual-tour">Virtual Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Carousel & Panoramic View-->
+    <section id="virtual-tour" class="section">
+      <h2>Virtual Tour</h2>
+      <div id="media-viewers-grid">
+        <!-- Panoramic Viewer -->
+        <div class="media-grid-item">
+          <div id="panoramic-viewer">
+            <div id="viewer">
+              <div id="panoramicDots"></div>
+              <span id="panoramic-left-arrow">
+                < </span>
+                  <span id="panoramic-right-arrow"> > </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 STC. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

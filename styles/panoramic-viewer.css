@@ -1,0 +1,148 @@
+#panoramic-viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #viewer {
+        width: 100vw; 
+        height: 100vh;
+        max-height:700px;
+        position: relative;
+    }
+}
+
+.enlarged {
+  width: 70% !important;
+  top: 50% !important;
+  opacity: 0.9 !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: position 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  
+}
+
+.panoramic-viewer {
+    position: relative; /* This makes it a reference for the absolutely positioned image */
+}
+
+.fp-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.6; /* Adjust the opacity as needed */
+    z-index: 10;
+    margin: 5px;
+    width: 20%;
+}
+
+#panoramic-right-arrow {
+    right: 0px;
+    margin-right: 10px;
+}
+
+#panoramic-left-arrow {
+    left: 0px;
+    margin-left: 10px;
+}
+
+#panoramic-left-arrow, #panoramic-right-arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 45%;
+    cursor: pointer;
+    font-size: 300%;
+    z-index: 1;
+    line-height: 0;
+    font-weight: lighter;
+    background-color: rgba(54, 54, 54, 0.45);
+
+    color: white;
+    transition: background-color 0.3s;
+    border-radius: 500px;
+    padding: 25px 10px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.658);
+        color: rgb(232, 232, 232);
+    }
+}
+
+ #panoramicDots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(54, 54, 54, 0.45);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 6px 10px 6px 10px;
+    z-index: 100;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background-color: white;
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 100;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width value to align it */
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.dot:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes panoramic-left-arrow-animation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes panoramic-right-arrow-animation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
