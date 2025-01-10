@@ -5,8 +5,8 @@
 
     #viewer {
         width: 100vw; 
-        height: 100vh;
-        max-height:700px;
+        height: 90vh;
+        /* max-height:700px; */
         position: relative;
     }
 }
