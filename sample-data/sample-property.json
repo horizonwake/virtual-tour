@@ -1,0 +1,56 @@
+{
+    "CustomerID": "Fiori",
+    "SK": "Property#MikesCottage",
+    "PropertyID": "MikesCottage",
+    "PropertyName": "Mike's Cottage",
+    "Rooms": [
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/01+FOYER.png",
+      "Name": "Foyer",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/01+FOYER.jpg",
+      "RoomID": "01"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/02+DINING+ROOM.png",
+      "Name": "Dining Room",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/02+DINING+ROOM.jpg",
+      "RoomID": "02"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/03+GREAT+ROOM.png",
+      "Name": "Great Room",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/03+GREAT+ROOM.jpg",
+      "RoomID": "03"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/04+KITCHEN.png",
+      "Name": "Kitchen",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/04+KITCHEN.jpg",
+      "RoomID": "04"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/05+KITCHEN+02.png",
+      "Name": "Kitchen 02",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/05+KITCHEN+02.jpg",
+      "RoomID": "05"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/06+HALLWAY.png",
+      "Name": "Hallway",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/06+HALLWAY.jpg",
+      "RoomID": "06"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/07+MASTER+BEDROOM.png",
+      "Name": "Master Bedroom",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/07+MASTER+BEDROOM.jpg",
+      "RoomID": "07"
+     },
+     {
+      "FloorplanImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/08+ENSUITE.png",
+      "Name": "Ensuite",
+      "PanoramicImage": "https://stc-virtual-tour.s3.us-east-1.amazonaws.com/MikesCottage/08+ENSUITE.jpg",
+      "RoomID": "08"
+     }
+    ]
+   }

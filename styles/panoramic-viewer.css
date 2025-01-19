@@ -11,6 +11,14 @@
     }
 }
 
+#media-viewers-grid {
+    padding-top: 4rem;
+    justify-content: center;
+    p {
+        text-align: center;
+    }
+}
+
 .enlarged {
   width: 70% !important;
   top: 50% !important;
